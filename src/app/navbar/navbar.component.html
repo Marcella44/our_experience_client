@@ -1,13 +1,17 @@
-<nav class="navbar">
-	<div class="brand-name">
-		<a routerLink="/">Our Experience</a>
+<nav class="navbar is-fixed-top">
+	<div class="navbar-brand">
+		<a class="has-text-link-10 has-text-weight-bold is-size-1 is-family-sans-serif" routerLink="/">Our Experience</a>
 	</div>
-	<div class="nav-links">
-		@if (authService.isLoggedIn()){
-		<button (click)="logout()">Logout</button>
-		}@else {
-		<a routerLink="/login">Login</a>
-    <a routerLink="/create-user">Create Account</a>
-		}
+
+	<div class="navbar-end navbar-menu is-size-4 has-padding-4">
+		<!-- @if (authService.isLoggedIn()){ -->
+    <a routerLink="/forums" class="navbar-item p-4">Forums</a>
+    <a routerLink="/forums" class="navbar-item p-4">Forums</a>
+    <a routerLink="/forums" class="navbar-item p-4">Forums</a>
+		<a routerLink="/" button="button" (click)="logout()" class="navbar-item p-4">Logout</a>
+		<!-- }@else { -->
+		<a routerLink="/login" class="navbar-item p-4">Login</a>
+    <a routerLink="/create-user" class="navbar-item p-4">Create Account</a>
+		<!-- } -->
 	</div>
 </nav>

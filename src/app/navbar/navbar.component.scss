@@ -4,22 +4,19 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #5f6f81;
+	background-color: #778799;
 	color: rgb(209, 197, 197);
 	padding: 0.5rem 1rem;
 }
 
-.navbar .brand-name a {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: rgb(240, 233, 233);
+.navbar a {
 	text-decoration: none;
 }
 
@@ -45,7 +42,7 @@ body {
 .navbar .nav-links a:hover,
 .navbar .nav-links button:hover {
 	background-color: white;
-	color: #020c16;
+	color: #041d35;
 }
 
 
