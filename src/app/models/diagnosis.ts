@@ -1,5 +1,11 @@
 export class Diagnosis {
-  id: number = 1;
-  slug: string = '';
-  description: string = '';
+  id: number;
+  slug: string;
+  description: string;
+
+  constructor(diagnosis: any) {
+    this.id = diagnosis.id || 0;
+    this.slug = diagnosis.slug || '';
+    this.description = diagnosis.description || '';
+  }
 }

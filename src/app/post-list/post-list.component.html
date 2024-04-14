@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="left-column"></div>
+  <div class="main-column is-fluid"></div>
+  @for (post of posts; track post.id) {
+    <app-post [post]="post"></app-post>
+  }
+  <div class="right-column"></div>
+</div>
+

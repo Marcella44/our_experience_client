@@ -1,17 +1,17 @@
-<nav class="navbar is-fixed-top">
+<nav class="navbar is-fixed-top card">
 	<div class="navbar-brand">
-		<a class="has-text-link-10 has-text-weight-bold is-size-1 is-family-sans-serif" routerLink="/">Our Experience</a>
+		<a class="has-text-link-10 has-text-weight-bold is-size-2 is-family-sans-serif" routerLink="/">Our Experience</a>
 	</div>
 
-	<div class="navbar-end navbar-menu is-size-4 has-padding-4">
-		<!-- @if (authService.isLoggedIn()){ -->
-    <a routerLink="/forums" class="navbar-item p-4">Forums</a>
-    <a routerLink="/forums" class="navbar-item p-4">Forums</a>
-    <a routerLink="/forums" class="navbar-item p-4">Forums</a>
-		<a routerLink="/" button="button" (click)="logout()" class="navbar-item p-4">Logout</a>
-		<!-- }@else { -->
-		<a routerLink="/login" class="navbar-item p-4">Login</a>
-    <a routerLink="/create-user" class="navbar-item p-4">Create Account</a>
-		<!-- } -->
+	<div class="navbar-end navbar-menu is-size-5 has-padding-4">
+		@if (authService.isLoggedIn()){
+    <a routerLink="/diagnosis-list" class="navbar-item p-4 card">Diagnoses</a>
+    <a routerLink="/post-list" class="navbar-item p-4 card">Forums</a>
+    <a routerLink="/profile" class="navbar-item p-4 card">Profile</a>
+		<a routerLink="/" class="navbar-item p-4 card">Logout</a>
+		} @else {
+		<a routerLink="/login" class=" navbar-item p-4 card">Login</a>
+    <a routerLink="/create-user" class="navbar-item p-4 card">Create Account</a>
+		}
 	</div>
 </nav>
